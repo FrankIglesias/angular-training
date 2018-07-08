@@ -24,11 +24,11 @@
     </span>
     <input class="input" type="password" formControlName="password"/>
   </div>
-  <button class="sign-up-button" [disabled]="!rForm.valid">
+  <button class="button" [disabled]="!rForm.valid">
     Sign up
   </button>
   <div class="line-division"></div>
-  <button class="login-button" type="button">
+  <a routerLink="/login" class="link">
     Login
-  </button>
+  </a>
 </form>
