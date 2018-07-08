@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UserService }  from '../../services/user.service';
 
 @Component({
   selector: 'app-login',
@@ -15,7 +16,7 @@ export class  SignupComponent implements OnInit {
   first_name: string = '';
   last_name: string ='';
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private  userservice : UserService) {
   this.rForm = fb.group({
     'email': [null, Validators.required],
     'password': [null, Validators.required],
@@ -27,6 +28,10 @@ export class  SignupComponent implements OnInit {
 
   ngOnInit() {}
   logUser(user) {
-    console.log(user);
+  // UserService.createUser(user).then(response => {
+  //  if(response.ok) {
+  //    console.log(created);
+  //  }
+  // });
   }
 }
