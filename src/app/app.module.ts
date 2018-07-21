@@ -9,13 +9,17 @@ import { LoginComponent } from './screens/login/login.component';
 import { SignupComponent } from './screens/signup/signup.component';
 import { UserService } from './services/user.service';
 import { DashboardComponent } from './screens/dashboard/dashboard.component';
+import { BookdetailComponent } from './screens/bookdetail/bookdetail.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     SignupComponent,
-    DashboardComponent
+    DashboardComponent,
+    BookdetailComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

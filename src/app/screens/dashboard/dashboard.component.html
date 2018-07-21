@@ -1,9 +1,6 @@
-<a href="/" class="navbar">
-  <img src="http://startups.wolox.com.ar/assets/img/wolox_logo.png" alt="wolox logo" height="50px" width="auto" />
-  <a>Logout</a>
-</a>
+<app-navbar></app-navbar>
 <div class="book-list">
-    <a *ngFor="let book of books" class="book-container">
+    <a *ngFor="let book of books" class="book-container" href="/book/{{book.id}}">
       <img [src]="book.image_url" [alt]="book.title" class="book-image" />
       <h2 class="book-title">{{ book.title }}</h2>
       <span class="book-author">{{ book.author }}</span>
