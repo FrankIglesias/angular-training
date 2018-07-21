@@ -24,6 +24,12 @@
     </span>
     <input class="input" type="password" formControlName="password"/>
   </div>
+  <div class="input-container">
+    <span class="input-label">
+       Password Confirmation
+    </span>
+    <input class="input" type="password" formControlName="password_confirmation"/>
+  </div>
   <button class="button" [disabled]="!rForm.valid">
     Sign up
   </button>
