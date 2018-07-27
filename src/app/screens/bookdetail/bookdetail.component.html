@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+<div class="book-container">
+  <div class="book-description">
+    <img [src]="book.image_url" [alt]="book.title" class="image" />
+    <div>
+      <div class="headline">
+        <h1 class="book-title">{{book.title}}</h1>
+        <span class="book-genre">({{book.genre}})</span>
+      </div>
+      <div class="book-description-item">
+        <span class="bold">Autor del libro:</span>
+        <span>{{book.author}}</span>
+      </div>
+      <div class="book-description-item">
+        <span class="bold">Editorial:</span>
+        <span>{{book.author}}</span>
+      </div>
+      <div class="book-description-item">
+        <span class="bold">Año de publicación:</span>
+        <span>{{book.year}}</span>
+      </div>
+    </div>
+  </div>
+</div>
