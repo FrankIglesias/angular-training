@@ -1,0 +1,14 @@
+<div class="cards-container container">
+  <div>
+    <span>Titulo</span>
+    <input  [(ngModel)]="title" />
+    <button (click)="handleFilter()">Search</button>
+  </div>
+  <div class="cards-container">
+    <book-card *ngFor="let book of books | paginate:
+      { id: 'books',
+      itemsPerPage: 5,
+      currentPage: currentPage }" [book]="book"></book-card>
+  </div>
+    <pagination-controls id="books" (pageChange)="currentPage = $event"></pagination-controls>
+</div>

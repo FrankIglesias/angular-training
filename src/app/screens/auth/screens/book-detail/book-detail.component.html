@@ -1,0 +1,23 @@
+<div class="book-detail-container">
+<div *ngIf="book | async as book;" class="book-detail">  
+    <img class="image" src={{book.image_url}} alt="book cover">
+    <div class="info">
+      <div class="header">
+        <h2 class="title">{{ book.title }}</h2>
+        <span class="genre">{{ book.genre }}</span>
+      </div>
+      <div class="description">
+        <label class="label">Autor del libro:</label>
+        <span>{{ book.author }}</span>
+      </div>
+      <div class="description">
+        <label class="label">Editorial:</label>
+        <span>{{ book.publisher }}</span>
+      </div>
+      <div class="description">
+        <label class="label">Año de publicacion:</label>
+        <span>{{ book.year }}</span>
+      </div>
+    </div>
+  </div>
+</div>

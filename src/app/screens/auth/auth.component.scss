@@ -1,0 +1,30 @@
+@import './src/scss/colors';
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  
+  .navbar {
+    border-top: 5px solid $blue;
+    background-color: $white;
+    width: 100%;
+    box-shadow: 0 10px 6px -6px $alto;
+    padding: 5px 15px;
+    position: fixed;
+
+    .navbar-interior {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logout {
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .wolox-logo {
+      cursor: pointer;
+    }
+  }
+}

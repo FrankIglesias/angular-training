@@ -1,0 +1,17 @@
+<div class="screen-container">
+  <div class="sign-form">
+    <img class="wolox-logo" src="/assets/wolox_books_logo.png" alt="wolox-logo">
+    <form class="form" [formGroup]="rForm" (ngSubmit)="login()">
+      <label class="text">
+        Email
+      </label>
+      <input class="input" type="text" formControlName="email">
+      <label class="text">
+        Password
+      </label>
+      <input class="input" type="password" formControlName="password">
+      <button type="submit" class="button primary-button">Login</button>
+    </form>
+    <button type="button" class="button secondary-button" (click)="goToSignUp()">Sign up</button>
+  </div>
+</div>
